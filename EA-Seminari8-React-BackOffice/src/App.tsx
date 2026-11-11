@@ -4,6 +4,7 @@ import { AuthorForm } from './components/AuthorForm';
 import { AuthorsList } from './components/AuthorsList';
 import { BookForm } from './components/BookForm';
 import { BooksList } from './components/BooksList';
+import { FavouritesList } from './components/FavouritesList';
 import { Layout } from './components/Layout';
 
 // Rutas de la app (React Router v6+). Todas cuelgan de <Layout />, que pinta la barra de arriba
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/authors/new" element={<AuthorForm />} />
         <Route path="/authors/:id/edit" element={<AuthorForm />} />
         <Route path="/books" element={<BooksList />} />
+        <Route path="/books/favourites" element={<FavouritesList />} />
         <Route path="/books/new" element={<BookForm />} />
         <Route path="/books/:id/edit" element={<BookForm />} />
         {/* Cualquier otra URL vuelve al listado de autores */}
