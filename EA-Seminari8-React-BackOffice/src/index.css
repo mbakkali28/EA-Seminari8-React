@@ -92,6 +92,27 @@ button.danger:hover:not(:disabled) {
   background: var(--danger-light);
 }
 
+button.favourite-button {
+  padding: 0.25rem 0.5rem;
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  line-height: 1;
+}
+
+button.favourite-button:hover:not(:disabled) {
+  border-color: var(--primary);
+  background: #eef0fb;
+  color: var(--primary);
+}
+
+/* El libro está en favoritos */
+button.favourite-button.active {
+  border-color: #b26a00;
+  background: #fff8e1;
+  color: #b26a00;
+}
+
 /* Barra de arriba */
 .navbar {
   display: flex;
